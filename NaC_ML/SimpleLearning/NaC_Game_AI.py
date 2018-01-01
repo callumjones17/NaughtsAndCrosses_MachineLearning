@@ -1,8 +1,10 @@
-import csv
+﻿import csv
 import os
 from random import randint
 from msvcrt import getch
 import subprocess as sp
+
+MAX_NUMGAMES = 100
 
 turn1 = []
 turn2 = []
@@ -278,7 +280,7 @@ def process_win(index1,index1Pos,index3,index3Pos, index5,index5Pos, index7,inde
 #turn3[0][randFunc(turn3[0])] = 'O'
 #display(turn1[0])
 #display(turn3[0])
-for numGames in range(0,100):
+for numGames in range(0,MAX_NUMGAMES):
     winner = False
     games = 0
     while winner != True:
